@@ -1,0 +1,7 @@
+<!-- Put your News Aggregator articles.erb code here -->
+<h1>Article Posts</h1>
+<% @articles.each do |article| %>
+  <h4><%= article["title"] %> </h4>
+  <p><%= article["description"] %> </p>
+  <p><a href="<%= article["url"] %>"><%=article["url"]%></a></p></br>
+<% end %>
